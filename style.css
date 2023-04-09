@@ -383,7 +383,7 @@ main .image img {
 }
 .services .content .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 .services .content .container .box {
@@ -409,11 +409,13 @@ main .image img {
     grid-column: span 12;
     padding: 60px 0;
   }
-  .services .content .container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
   .services .image {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .services .content .container {
+    grid-template-columns: 1fr;
   }
 }
 /* end services */
@@ -432,14 +434,8 @@ main .image img {
 .pricing p {
   color: #999999;
   line-height: 24px;
-  margin: 20px 80px;
+  margin: 30px 80px;
   text-align: center;
-}
-.pricing .box {
-  border: 1px solid#eee;
-  padding: 40px 0px 20px 40px;
-  transition: all 0.3s ease 0s;
-  border-radius: 5px;
 }
 @media (max-width: 767px) {
   .pricing h2 {
@@ -447,14 +443,14 @@ main .image img {
     line-height: 44px;
   }
   .pricing p {
-    margin: 20px;
+    margin: 30px;
     font-size: 14px;
   }
 }
 .pricing .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 60px 30px;
 }
 .pricing .container .box {
   border: 1px solid#eee;
@@ -472,7 +468,7 @@ main .image img {
 }
 .pricing .container .box span {
   background-color: #111;
-  padding: 7px;
+  padding: 7px 12px;
   font-size: 14px;
   color: white;
 }
