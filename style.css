@@ -415,7 +415,7 @@ main .image img {
 }
 @media (max-width: 767px) {
   .services .content .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: unset;
   }
 }
 /* end services */
